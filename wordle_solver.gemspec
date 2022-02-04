@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/wordle_solver/version"
+require_relative "lib/wordle_solver"
 
 Gem::Specification.new do |spec|
   spec.name = "wordle_solver"
