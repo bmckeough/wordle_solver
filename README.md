@@ -1,8 +1,6 @@
 # WordleSolver
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wordle_solver`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A very simplistinc tool for solving [Wordle](https://www.powerlanguage.co.uk/wordle/). For a more sophisticated take on this problem, please see [3Blue1Brown's "Best opener: CRANE"](https://www.3blue1brown.com/lessons/wordle).
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+bin/console
+p = WordleSolver::Puzzle.new
+p.recommend_guess
+# Identity the three parameters to #filter
+# positional: {letter => index} for green letters
+# non_positional: {letter => index} for yellow letters
+# unmatched: [letter] for grey letters
+p.filter({positional, non_positional, unmatched)
+p.recommend_guess
+```
 
 ## Development
 
@@ -32,4 +40,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/wordle_solver.
+This repository is not under active development and is not supported. You are welcome to fork it and continue development and support.
